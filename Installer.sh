@@ -7,11 +7,11 @@ pkg install -y python-pip
 read -p "Enter the password Medic gave you: " password
 
 if [[ "$password" == "123" ]]; then
-    git clone https://raw.githubusercontent.com/medic2227/card/main/main.py
+    wget https://raw.githubusercontent.com/medic2227/card/refs/heads/main/main.py
 elif [[ "$password" == "321" ]]; then
-    git clone https://raw.githubusercontent.com/medic2227/nitro/main/main.py
+    wget https://raw.githubusercontent.com/medic2227/nitro/refs/heads/main/main.py
 else
-    echo "Invalid password. Exiting."
+    echo "Invalid password"
     exit 1
 fi
 
